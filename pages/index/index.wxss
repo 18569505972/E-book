@@ -1,0 +1,23 @@
+/**index.wxss**/
+.title{
+    padding: 0 40rpx;
+}
+.recommendList {
+  padding: 30rpx;
+  display: flex;
+}
+
+.recommendList view {
+  flex: 1;
+  text-align: center;
+}
+
+.recommendList image {
+  width: 90%;
+  height: 300rpx;
+}
+
+.recommendList text {
+  width: 98%;
+  font-size:40rpx;
+}

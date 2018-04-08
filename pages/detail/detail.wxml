@@ -1,0 +1,29 @@
+<view class="container">
+    <view class='header'>
+        <image src='{{backImg}}' mode="scaleToFill"></image>
+        <view class='msg'>
+            <view class='bookNm'>{{bookNm}}</view>
+            <view class='auth'>作者：
+                <text>{{auth}}</text>
+            </view>
+        </view>
+    </view>
+    <view class='note'>
+        <view class='line'></view>书籍介绍</view>
+    <view class='decription'>{{decription}}</view>
+    <view class='note'>
+        <view class='line'></view>书籍目录</view>
+    <navigator class='section' wx:for="{{sectionList}}" wx:key="{{index}}" url="/pages/section/section?name={{bookNm}}&title={{item.href}}&section={{item.sectionname}}">
+        {{item.sectionname}}
+    </navigator> 
+    <view class='footer'>
+        <view class='read'>
+            <image src='images/read.png' mode="scaleToFill"></image>
+            <text>开始阅读</text>
+        </view>
+        <view bindtap='saveCollection'>
+            <image src='images/collect.png' mode="scaleToFill"></image>
+            <text>加入书架</text>
+        </view>
+    </view>
+</view>

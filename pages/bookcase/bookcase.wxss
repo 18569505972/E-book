@@ -1,0 +1,85 @@
+.bookcase {
+    background: #ccc;
+}
+
+.usermsg {
+    padding: 60rpx;
+    background: #fff;
+}
+
+.usermsg image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.usermsg text {
+    margin-left: 30rpx;
+}
+
+.manage {
+    float: right;
+    display: block;
+    height: 60rpx;
+    width: 120rpx;
+    border: 2rpx solid #63b8ff;
+    font-size: 34rpx;
+    text-align: center;
+    line-height: 60rpx;
+    border-radius: 15rpx;
+    margin-top: 20rpx;
+    color: #63b8ff;
+}
+
+.collectList {
+    margin-top: 30rpx;
+    background: #fff;
+    padding: 30rpx 30rpx;
+}
+
+.com {
+    height: 260rpx;
+    width: 28%;
+    display: inline-block;
+    position: relative;
+}
+
+.tip {
+    border: 2rpx solid #ccc;
+    position: relative;
+}
+
+.center {
+    margin: 30rpx 7.5%;
+}
+
+.com image {
+    width: 100%;
+    height: 100%;
+}
+
+.com checkbox{
+    position: absolute;
+}
+
+.tip image {
+    width: 30%;
+    height: 60rpx;
+    display: block;
+    position: absolute;
+    top: 100rpx;
+    left: 35%;
+}
+
+.opration{
+    visibility:visible;
+}
+
+.opration text{
+    float:right;
+}
+
+.opration checkbox-group{
+    display:inline-block;
+}

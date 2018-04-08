@@ -1,0 +1,24 @@
+/**app.wxss**/
+
+.container {
+    padding: 60rpx 0;
+    font-size: 40rpx;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.line {
+    display: inline-block;
+    height: 40rpx;
+    background-color: #f00;
+    width: 10rpx;
+    vertical-align: middle;
+    border-radius: 30%;
+    margin-right: 10rpx;
+}

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view>
+    <view class='contain' wx:for="{{classList}}" wx:key="{{index}}" bindtap='jumpClass' data-type="{{item.type}}" data-name="{{item.name}}">
+        <image src='{{item.imgUrl}}' mode="scaleToFill" class='backImg'></image>
+        <text>{{item.name}}</text>
+        <image src='images/left.png' mode="scaleToFill" class='left'></image>
+    </view>
+</view>

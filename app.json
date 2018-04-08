@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/bookcase/bookcase",
+        "pages/stack/stack",
+        "pages/detail/detail",
+        "pages/section/section",
+        "pages/logs/logs",
+        "pages/class/class"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "backgroundColor": "#ffffff",
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": "50",
+        "navigationBarBackgroundColor": "#63B8FF",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "#FFFFFF"
+    },
+    "tabBar": {
+        "color": "#cdcdcd",
+        "selectedColor": "#63B8FF",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/bookcase/bookcase",
+                "text": "书架",
+                "iconPath": "images/bookcase.png",
+                "selectedIconPath": "images/bookcase_select.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "精选",
+                "iconPath": "images/recommend.png",
+                "selectedIconPath": "images/recommend_select.png"
+            },
+            {
+                "pagePath": "pages/stack/stack",
+                "text": "书库",
+                "iconPath": "images/stack.png",
+                "selectedIconPath": "images/stack_select.png"
+            }
+        ]
+    },
+    "debug": true
+}

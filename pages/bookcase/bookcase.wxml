@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class='bookcase'>
+    <view class='usermsg'>
+        <image src='{{usericon?usericon:"images/default.png"}}'></image>
+        <text style="color:{{nickname?'#000':'#F00'}}">{{nickname?nickname:"请10分钟后再次授权"}}</text>
+        <text wx:if="{{nickname}}" class='manage'>管理</text>
+    </view>
+    <view class='collectList'>
+        <view class='opration'>
+            <checkbox-group bindchange="allChecked">
+                <checkbox value='all'>全选</checkbox>
+            </checkbox-group>
+            <text>删除</text>
+        </view>
+        <checkbox-group bindchange="delectbook">
+            <view class='com'>
+                <checkbox checked='{{all}}'></checkbox>
+                <image src='http://imgs.liuxd.com/2017/0810/20170810101823613.jpg'></image>
+            </view>
+            <view class='com center'>
+                <checkbox checked='{{all}}'></checkbox>
+                <image src='http://imgs.liuxd.com/2017/0810/20170810101823613.jpg'></image>
+            </view>
+            <view class='com'>
+                <checkbox checked='{{all}}'></checkbox>
+                <image src='http://imgs.liuxd.com/2017/0810/20170810101823613.jpg'></image>
+            </view>
+            <view class='com'>
+                <checkbox checked='{{all}}'></checkbox>
+                <image src='http://imgs.liuxd.com/2017/0810/20170810101823613.jpg'></image>
+            </view>
+            <view class='com center'>
+                <checkbox checked='{{all}}'></checkbox>
+                <image src='http://imgs.liuxd.com/2017/0810/20170810101823613.jpg'></image>
+            </view>
+            <view class='tip com' bindtap='jumpindex'>
+                <image src='images/add.png'></image>
+            </view>
+        </checkbox-group>
+    </view>
+</view>

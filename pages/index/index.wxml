@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+    <!--<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>-->
+    <view class="title">精品推荐</view>
+    <view class='recommendList' wx:for="{{recommendArr}}" wx:key="{{index}}">
+        <view wx:for="{{item}}" wx:for-item="el" wx:for-index="idx" wx:key="{{idx}}" bindtap='jumpBookdtl' data-name='{{el.bookNm}}' data-title='{{el.title}}'>
+            <image src='{{el.imgUrl}}' mode="scaleToFill"></image>
+            <text>{{el.bookNm}}</text>
+        </view>
+        <view wx:if="{{item.length==2}}"></view>
+        <block wx:if="{{item.length==1}}">
+            <view></view>
+            <view></view>
+        </block>
+    </view>
+    <view class="title">最近更新</view>
+    <view class='recommendList' wx:for="{{latestArr}}" wx:key="{{index}}">
+        <view wx:for="{{item}}" wx:for-item="el" wx:for-index="idx" wx:key="{{idx}}" bindtap='jumpBookdtl' data-name='{{el.bookNm}}' data-title='{{el.title}}'>
+            <image src='{{el.imgUrl}}' mode="scaleToFill"></image>
+            <text>{{el.bookNm}}</text>
+        </view>
+        <view wx:if="{{item.length==2}}"></view>
+        <block wx:if="{{item.length==1}}">
+            <view></view>
+            <view></view>
+        </block>
+    </view>
+</view>

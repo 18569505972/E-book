@@ -1,0 +1,21 @@
+.contain {
+    padding: 30rpx;
+    border-bottom: 2rpx solid #ccc;
+}
+
+.backImg {
+    width: 120rpx;
+    height: 190rpx;
+    vertical-align: middle;
+}
+
+.left {
+    float: right;
+    width: 60rpx;
+    height: 60rpx;
+    margin-top: 65rpx;
+}
+
+text {
+    margin-left: 30rpx;
+}

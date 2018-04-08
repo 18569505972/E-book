@@ -18,7 +18,7 @@ App({
     },
     globalData: {
         userInfo: null,
-        url: 'XXX'
+        url: 'http://127.0.0.1:3001'
     },
     // 授权获取用户信息
     authorize: function () {
